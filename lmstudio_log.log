@@ -1,0 +1,437 @@
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER] Success! HTTP server listening on port 1234
+[2026-08-25 10:57:18][INFO] 
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER] Supported endpoints:
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER]   LM Studio API
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER]    ->  GET  http://localhost:1234/api/v1/models
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER]    ->  POST http://localhost:1234/api/v1/chat
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER]    ->  POST http://localhost:1234/api/v1/models/load
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER]    ->  POST http://localhost:1234/api/v1/models/download
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER]    ->  GET http://localhost:1234/api/v1/models/download/status:job_id
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER]   OpenAI-compatible
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER]    ->  GET  http://localhost:1234/v1/models
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER]    ->  POST http://localhost:1234/v1/responses
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER]    ->  POST http://localhost:1234/v1/chat/completions
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER]    ->  POST http://localhost:1234/v1/completions
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER]    ->  POST http://localhost:1234/v1/embeddings
+[2026-08-25 10:57:18][INFO] 
+[2026-08-25 10:57:18][INFO][LM STUDIO SERVER] Logs are saved into C:\Users\musta\.lmstudio\apps\bionic\server-logs
+[2026-08-25 10:57:18][INFO] Server started.
+[2026-08-25 10:57:18][INFO] Just-in-time model loading active.
+[2026-08-25 13:07:23][DEBUG] 0.00.226.923 I srv          init: The UI is disabled
+0.00.226.930 I srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+[2026-08-25 13:07:23][DEBUG] 0.00.239.367 I srv    load_model: loading model 'C:\Users\musta\.lmstudio\models\lmstudio-community\NVIDIA-Nemotron-3-Nano-4B-GGUF\NVIDIA-Nemotron-3-Nano-4B-Q4_K_M.gguf'
+[2026-08-25 13:07:40][DEBUG] 0.16.764.364 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 16384, kv_unified = 'true'
+[2026-08-25 13:07:40][DEBUG] 0.16.808.290 I srv          init: chat template supports preserving reasoning, consider enabling it via --reasoning-preserve
+[2026-08-25 13:07:40][DEBUG] 0.16.810.217 I srv  llama_server: model loaded
+[2026-08-25 13:07:40][DEBUG] 0.16.810.895 I srv  llama_server: listening on http://127.0.0.1:49676
+[2026-08-25 13:07:41][DEBUG] 0.17.641.998 I slot get_availabl: id  3 | task -1 | selected slot by LRU, t_last = -1
+[2026-08-25 13:07:41][DEBUG] 0.17.649.096 I slot launch_slot_: id  3 | task 0 | processing task, is_child = 0
+[2026-08-25 13:07:56][DEBUG] 0.33.273.615
+[2026-08-25 13:07:56][DEBUG] I slot print_timing: id  3 | task 0 | prompt processing, n_tokens =   2048, progress = 0.32, t =  15.62 s / 131.11 tokens per second
+[2026-08-25 13:08:17][DEBUG] 0.54.515.517
+[2026-08-25 13:08:17][DEBUG] I slot print_timing: id  3 | task 0 | prompt processing, n_tokens =   4096, progress = 0.64, t =  36.86 s / 111.11 tokens per second
+[2026-08-25 13:08:37][DEBUG] 1.14.515.688
+[2026-08-25 13:08:37][DEBUG] I slot print_timing: id  3 | task 0 | prompt processing, n_tokens =   5925, progress = 0.92, t =  56.87 s / 104.19 tokens per second
+[2026-08-25 13:08:40][DEBUG] 1.17.215.559 I slot print_timing: id  3 | task 0 | prompt processing, n_tokens =   6077, progress = 0.94, t =  59.57 s / 102.02 tokens per second
+[2026-08-25 13:08:45][DEBUG] 1.22.103.143
+[2026-08-25 13:08:45][DEBUG] I slot print_timing: id  3 | task 0 | prompt processing, n_tokens =   6437, progress = 1.00, t =  64.45 s / 99.87 tokens per second
+[2026-08-25 13:09:04][DEBUG] 1.41.490.261 I slot print_timing: id  3 | task 0 | prompt eval time =   70077.15 ms /  6441 tokens (   10.88 ms per token,    91.91 tokens per second)
+1.41.490.470 I slot print_timing: id  3 | task 0 |        eval time =   13763.25 ms /    54 tokens (  254.87 ms per token,     3.92 tokens per second)
+1.41.490.472 I slot print_timing: id  3 | task 0 |       total time =   83840.39 ms /  6495 tokens
+1.41.490.616 I slot print_timing: id  3 | task 0 |    graphs reused =         53
+[2026-08-25 13:09:04][DEBUG] 1.41.519.498 I slot      release: id  3 | task 0 | stop processing: n_tokens = 6494, truncated = 0
+[2026-08-25 13:09:05][DEBUG] 1.41.995.490 I slot get_availabl: id  2 | task -1 | selected slot by LRU, t_last = -1
+[2026-08-25 13:09:05][DEBUG] 1.41.997.279 I slot launch_slot_: id  2 | task 60 | processing task, is_child = 0
+[2026-08-25 13:09:15][DEBUG] 1.52.108.285 I slot print_timing: id  2 | task 60 | prompt eval time =    5396.18 ms /    55 tokens (   98.11 ms per token,    10.19 tokens per second)
+1.52.108.340 I slot print_timing: id  2 | task 60 |        eval time =    1354.79 ms /    12 tokens (  112.90 ms per token,     8.86 tokens per second)
+1.52.108.343 I slot print_timing: id  2 | task 60 |       total time =    6750.97 ms /    67 tokens
+1.52.108.346 I slot print_timing: id  2 | task 60 |    graphs reused =         63
+[2026-08-25 13:09:15][DEBUG] 1.52.112.090 I slot      release: id  2 | task 60 | stop processing: n_tokens = 66, truncated = 0
+[2026-08-25 13:11:46][DEBUG] Received request: GET to /v1
+[2026-08-25 13:11:46][ERROR] Unexpected endpoint or method. (GET /v1). Returning 200 anyway
+[2026-08-25 13:11:47][DEBUG] Received request: GET to /favicon.ico
+[2026-08-25 13:11:47][ERROR] Unexpected endpoint or method. (GET /favicon.ico). Returning 200 anyway
+[2026-08-25 13:13:53][DEBUG] Received request: POST to /v1/chat/completions with body {
+  "messages": [
+    {
+      "role": "system",
+      "content": "Always answer in rhymes."
+    },
+    {
+      "role": "user",
+      "content": "Introduce yourself."
+    }
+  ],
+  "model": "local-model",
+  "temperature": 0.7
+}
+[2026-08-25 13:13:54][INFO][nvidia/nemotron-3-nano-4b] Running chat completion on conversation with 2 messages.
+[2026-08-25 13:13:54][DEBUG] 6.31.349.293 I slot get_availabl: id  2 | task -1 | selected slot by LCP similarity, f_sim_best = 0.148 (> 0.100 thold), f_keep = 0.061
+[2026-08-25 13:14:09][DEBUG] 6.46.166.665
+[2026-08-25 13:14:09][DEBUG] I slot launch_slot_: id  2 | task 75 | processing task, is_child = 0
+[2026-08-25 13:14:09][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 0.0%
+[2026-08-25 13:14:12][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 44.4%
+[2026-08-25 13:14:17][DEBUG] 6.53.910.829
+[2026-08-25 13:14:17][DEBUG] I slot print_timing: id  2 | task 75 | prompt processing, n_tokens =     23, progress = 0.85, t =   7.73 s / 2.97 tokens per second
+[2026-08-25 13:14:17][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 85.2%
+[2026-08-25 13:14:21][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 100.0%
+[2026-08-25 13:14:39][DEBUG] 7.15.726.124 I slot print_timing: id  2 | task 75 | n_decoded =    100, tg =   5.90 t/s, tg_3s =   5.90 t/s
+[2026-08-25 13:14:43][DEBUG] 7.18.818.964 I slot print_timing: id  2 | task 75 | n_decoded =    116, tg =   5.79 t/s, tg_3s =   5.17 t/s
+[2026-08-25 13:14:45][DEBUG] 7.22.024.620 I slot print_timing: id  2 | task 75 | n_decoded =    130, tg =   5.59 t/s, tg_3s =   4.37 t/s
+[2026-08-25 13:14:48][DEBUG] 7.25.204.466 I slot print_timing: id  2 | task 75 | n_decoded =    146, tg =   5.53 t/s, tg_3s =   5.03 t/s
+[2026-08-25 13:14:51][DEBUG] 7.28.331.577 I slot print_timing: id  2 | task 75 | n_decoded =    166, tg =   5.63 t/s, tg_3s =   6.57 t/s
+[2026-08-25 13:14:54][DEBUG] 7.31.321.476 I slot print_timing: id  2 | task 75 | n_decoded =    190, tg =   5.84 t/s, tg_3s =   7.81 t/s
+[2026-08-25 13:14:57][DEBUG] 7.34.329.118 I slot print_timing: id  2 | task 75 | n_decoded =    205, tg =   5.77 t/s, tg_3s =   4.98 t/s
+[2026-08-25 13:14:58][DEBUG] 7.34.837.615 I slot print_timing: id  2 | task 75 | prompt eval time =   12613.67 ms /    27 tokens (  467.17 ms per token,     2.14 tokens per second)
+7.34.837.624 I slot print_timing: id  2 | task 75 |        eval time =   36048.90 ms /   209 tokens (  172.48 ms per token,     5.80 tokens per second)
+7.34.839.388 I slot print_timing: id  2 | task 75 |       total time =   48662.57 ms /   236 tokens
+7.34.839.555 I slot print_timing: id  2 | task 75 |    graphs reused =        270
+[2026-08-25 13:14:58][DEBUG] 7.34.847.143 I slot      release: id  2 | task 75 | stop processing: n_tokens = 235, truncated = 0
+[2026-08-25 13:14:58][INFO][nvidia/nemotron-3-nano-4b] Model generated tool calls: []
+[2026-08-25 13:14:58][INFO][nvidia/nemotron-3-nano-4b] Generated prediction: {
+  "id": "chatcmpl-1asxl1vm5cwi3uq4ohzre5q",
+  "object": "chat.completion",
+  "created": 1787652834,
+  "model": "nvidia/nemotron-3-nano-4b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "I’m Qwen, the chatbot, swift as a breeze,  \nA rhyme‑crafting guide for every please.",
+        "reasoning_content": "We need to respond only in rhymes. The user: \"Introduce yourself.\" So we must introduce ourselves, but all text must be rhymed. Probably a short poem describing introduction. Must ensure each line ends with rhyme? Or the whole answer is in rhymes. Could do couplets:\n\n\"Hello there I'm Qwen, your friendly guide,  \nI help you learn and chat all through.\" That's fine.\n\nBut \"Introduce yourself.\" Might need to say \"I am Qwen, a model that speaks with rhyme.\" Keep it rhymed.\n\nLet's produce a short intro: \"I am Qwen, the AI who rhymes,  \nHere to assist you, day and night.\" Good.\n\nMake sure all lines end in same rhyme? Or just rhymed. Probably okay.\n\nWe'll output as plain text with lines.\n",
+        "tool_calls": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 27,
+    "completion_tokens": 209,
+    "total_tokens": 236,
+    "completion_tokens_details": {
+      "reasoning_tokens": 179
+    }
+  },
+  "stats": {},
+  "system_fingerprint": "nvidia/nemotron-3-nano-4b"
+}
+[2026-08-25 13:21:56][DEBUG] Received request: POST to /v1/chat/completions/chat/completions with body {
+  "messages": [
+    {
+      "role": "system",
+      "content": "Always answer in turkish."
+    },
+    {
+      "role": "user",
+      "content": "What is biggest football team in Turkey?"
+    }
+  ],
+  "model": "local-model",
+  "temperature": 0.7
+}
+[2026-08-25 13:21:56][ERROR] Unexpected endpoint or method. (POST /v1/chat/completions/chat/completions). Returning 200 anyway
+[2026-08-25 13:22:08][DEBUG] Received request: GET to /api/v1/chat
+[2026-08-25 13:22:08][ERROR] Unexpected endpoint or method. (GET /api/v1/chat).
+[2026-08-25 13:22:10][DEBUG] Received request: GET to /favicon.ico
+[2026-08-25 13:22:10][ERROR] Unexpected endpoint or method. (GET /favicon.ico). Returning 200 anyway
+[2026-08-25 13:23:43][DEBUG] Received request: POST to /v1/chat/completions with body {
+  "messages": [
+    {
+      "role": "system",
+      "content": "Always answer in turkish."
+    },
+    {
+      "role": "user",
+      "content": "What is biggest football team in Turkey?"
+    }
+  ],
+  "model": "local-model",
+  "temperature": 0.7
+}
+[2026-08-25 13:23:43][INFO][nvidia/nemotron-3-nano-4b] Running chat completion on conversation with 2 messages.
+[2026-08-25 13:23:43][DEBUG] 16.20.465.521 I slot get_availabl: id  2 | task -1 | selected slot by LCP similarity, f_sim_best = 0.219 (> 0.100 thold), f_keep = 0.030
+[2026-08-25 13:24:01][DEBUG] 16.37.547.491
+[2026-08-25 13:24:01][DEBUG] I slot launch_slot_: id  2 | task 287 | processing task, is_child = 0
+[2026-08-25 13:24:01][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 0.0%
+[2026-08-25 13:24:03][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 40.6%
+[2026-08-25 13:24:06][DEBUG] 16.43.425.167
+[2026-08-25 13:24:06][DEBUG] I slot print_timing: id  2 | task 287 | prompt processing, n_tokens =     28, progress = 0.88, t =   5.87 s / 4.77 tokens per second
+[2026-08-25 13:24:06][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 87.5%
+[2026-08-25 13:24:09][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 100.0%
+[2026-08-25 13:24:24][DEBUG] 17.00.764.082
+[2026-08-25 13:24:24][DEBUG] I slot print_timing: id  2 | task 287 | n_decoded =    100, tg =   7.48 t/s, tg_3s =   7.48 t/s
+[2026-08-25 13:24:27][DEBUG] 17.03.640.108 I slot print_timing: id  2 | task 287 | n_decoded =    124, tg =   7.57 t/s, tg_3s =   7.96 t/s
+[2026-08-25 13:24:30][DEBUG] 17.06.679.322 I slot print_timing: id  2 | task 287 | n_decoded =    149, tg =   7.67 t/s, tg_3s =   8.23 t/s
+[2026-08-25 13:24:33][DEBUG] 17.09.761.965 I slot print_timing: id  2 | task 287 | n_decoded =    175, tg =   7.79 t/s, tg_3s =   8.53 t/s
+[2026-08-25 13:24:36][DEBUG] 17.12.630.173 I slot print_timing: id  2 | task 287 | prompt eval time =    9694.30 ms /    32 tokens (  302.95 ms per token,     3.30 tokens per second)
+17.12.630.180 I slot print_timing: id  2 | task 287 |        eval time =   25378.93 ms /   199 tokens (  127.53 ms per token,     7.84 tokens per second)
+17.12.630.181 I slot print_timing: id  2 | task 287 |       total time =   35073.22 ms /   231 tokens
+17.12.630.462 I slot print_timing: id  2 | task 287 |    graphs reused =        467
+[2026-08-25 13:24:36][DEBUG] 17.12.635.043 I slot      release: id  2 | task 287 | stop processing: n_tokens = 230, truncated = 0
+[2026-08-25 13:24:36][INFO][nvidia/nemotron-3-nano-4b] Model generated tool calls: []
+[2026-08-25 13:24:36][INFO][nvidia/nemotron-3-nano-4b] Generated prediction: {
+  "id": "chatcmpl-ynol44ov4vbcfwwhz0a74j",
+  "object": "chat.completion",
+  "created": 1787653423,
+  "model": "nvidia/nemotron-3-nano-4b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Galatasaray, Türkiye'nin en büyük ve popüler futbol kulübüdür. En çok izleyici sayısı ve rekabetçi statistikleriyle Türkiye genelinde en büyük bir takım kabul edilir.",
+        "reasoning_content": "The user: \"What is biggest football team in Turkey?\" They ask in English but want answer in Turkish, as per system: always answer in Turkish. So we must respond in Turkish. The question: biggest football team in Turkey - likely Galatasaray? Or maybe Fenerbahçe? Bigger fan base? Galatasaray has a larger fan base historically. But \"biggest\" could be by attendance or revenue. According to data, Galatasaray is the most popular club in Turkey with highest attendance. So answer: Galatasaray. Provide explanation in Turkish.\n\nMake sure answer only Turkish. So:\n\nGalatasaray, Türkiye'nin en büyük ve popüler futbol kulübüdür; en çok izleyici sayısı ve rekabetçi statistikleriyle en büyük bir takım kabul edilir...\n\nThat's fine.\n",
+        "tool_calls": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 32,
+    "completion_tokens": 199,
+    "total_tokens": 231,
+    "completion_tokens_details": {
+      "reasoning_tokens": 156
+    }
+  },
+  "stats": {},
+  "system_fingerprint": "nvidia/nemotron-3-nano-4b"
+}
+[2026-08-25 13:28:50][DEBUG] Received request: POST to /v1/chat/completions with body {
+  "messages": [
+    {
+      "role": "system",
+      "content": "Always answer just in one sentence."
+    },
+    {
+      "role": "user",
+      "content": "What is biggest football team in Turkey?"
+    }
+  ],
+  "model": "local-model",
+  "temperature": 0.7
+}
+[2026-08-25 13:28:51][INFO][nvidia/nemotron-3-nano-4b] Running chat completion on conversation with 2 messages.
+[2026-08-25 13:28:52][DEBUG] 21.28.645.684 I slot get_availabl: id  2 | task -1 | selected slot by LCP similarity, f_sim_best = 0.188 (> 0.100 thold), f_keep = 0.026
+[2026-08-25 13:28:59][DEBUG] 21.35.549.474
+[2026-08-25 13:28:59][DEBUG] I slot launch_slot_: id  2 | task 489 | processing task, is_child = 0
+[2026-08-25 13:28:59][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 0.0%
+[2026-08-25 13:28:59][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 40.6%
+[2026-08-25 13:29:00][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 87.5%
+[2026-08-25 13:29:02][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 100.0%
+[2026-08-25 13:29:15][DEBUG] 21.52.297.548
+[2026-08-25 13:29:15][DEBUG] I slot print_timing: id  2 | task 489 | n_decoded =    100, tg =   7.46 t/s, tg_3s =   7.46 t/s
+[2026-08-25 13:29:18][DEBUG] 21.55.381.793 I slot print_timing: id  2 | task 489 | n_decoded =    130, tg =   7.88 t/s, tg_3s =   9.72 t/s
+[2026-08-25 13:29:21][DEBUG] 21.58.460.008 I slot print_timing: id  2 | task 489 | n_decoded =    159, tg =   8.12 t/s, tg_3s =   9.42 t/s
+[2026-08-25 13:29:24][DEBUG] 22.01.506.721 I slot print_timing: id  2 | task 489 | n_decoded =    188, tg =   8.31 t/s, tg_3s =   9.52 t/s
+[2026-08-25 13:29:27][DEBUG] 22.04.539.943 I slot print_timing: id  2 | task 489 | n_decoded =    217, tg =   8.46 t/s, tg_3s =   9.56 t/s
+[2026-08-25 13:29:31][DEBUG] 22.07.554.916 I slot print_timing: id  2 | task 489 | n_decoded =    245, tg =   8.55 t/s, tg_3s =   9.29 t/s
+[2026-08-25 13:29:32][DEBUG] 22.09.084.365 I slot print_timing: id  2 | task 489 | prompt eval time =    3327.42 ms /    32 tokens (  103.98 ms per token,     9.62 tokens per second)
+22.09.084.373 I slot print_timing: id  2 | task 489 |        eval time =   30196.73 ms /   258 tokens (  117.04 ms per token,     8.54 tokens per second)
+22.09.084.374 I slot print_timing: id  2 | task 489 |       total time =   33524.15 ms /   290 tokens
+22.09.084.434 I slot print_timing: id  2 | task 489 |    graphs reused =        722
+[2026-08-25 13:29:32][DEBUG] 22.09.087.890 I slot      release: id  2 | task 489 | stop processing: n_tokens = 289, truncated = 0
+[2026-08-25 13:29:32][INFO][nvidia/nemotron-3-nano-4b] Model generated tool calls: []
+[2026-08-25 13:29:32][INFO][nvidia/nemotron-3-nano-4b] Generated prediction: {
+  "id": "chatcmpl-u6qo3fhyvgl4lwv66hymsn",
+  "object": "chat.completion",
+  "created": 1787653731,
+  "model": "nvidia/nemotron-3-nano-4b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Galatasaray is widely considered the biggest football team in Turkey due to its numerous league and cup titles.",
+        "reasoning_content": "Hmm, the user is asking about the biggest football team in Turkey and wants a one-sentence answer only. I need to recall that Turkish football history shows Galatasaray as the most successful club with multiple titles. But \"biggest\" could mean popularity or trophies—I think they're referring to dominance in terms of wins. The user specified \"just one sentence,\" so I'll keep it concise: \"Galatasaray is widely considered the biggest football team in Turkey due to its numerous league and cup titles.\" That's factual based on common knowledge, and it fits the requirement perfectly.  \n\nNow, assessing the user: they might be a casual fan or someone new to Turkish sports, asking for quick info. Their actual need is probably a straightforward answer without fluff, so I'll avoid extra details. Deeper unspoken needs could include wanting to understand Turkey's football culture or confirming facts for trivia—answering accurately addresses that.  \n\nI'll stick to one sentence as instructed: no more, no less. Final answer: \"Galatasaray is widely considered the biggest football team in Turkey due to its numerous league and cup titles.\" This covers it directly.\n",
+        "tool_calls": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 32,
+    "completion_tokens": 258,
+    "total_tokens": 290,
+    "completion_tokens_details": {
+      "reasoning_tokens": 235
+    }
+  },
+  "stats": {},
+  "system_fingerprint": "nvidia/nemotron-3-nano-4b"
+}
+[2026-08-25 13:32:08][DEBUG] Received request: POST to /v1/chat/completions with body {
+  "messages": [
+    {
+      "role": "system",
+      "content": "Always answer just in one sentence."
+    },
+    {
+      "role": "user",
+      "content": "What is biggest football team in Turkey?"
+    }
+  ],
+  "model": "local-model",
+  "temperature": 0.7
+}
+[2026-08-25 13:32:09][INFO][nvidia/nemotron-3-nano-4b] Running chat completion on conversation with 2 messages.
+[2026-08-25 13:32:09][DEBUG] 24.45.959.307 I slot get_availabl: id  2 | task -1 | selected slot by LCP similarity, f_sim_best = 1.000 (> 0.100 thold), f_keep = 0.111
+[2026-08-25 13:32:17][DEBUG] 24.54.450.990
+[2026-08-25 13:32:17][DEBUG] I slot launch_slot_: id  2 | task 750 | processing task, is_child = 0
+[2026-08-25 13:32:22][DEBUG] 24.59.094.865
+[2026-08-25 13:32:22][DEBUG] I slot print_timing: id  2 | task 750 | prompt processing, n_tokens =      0, progress = 0.88, t =   4.63 s / 0.00 tokens per second
+[2026-08-25 13:32:22][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 0.0%
+[2026-08-25 13:32:24][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 100.0%
+[2026-08-25 13:32:44][DEBUG] 25.21.538.477 I slot print_timing: id  2 | task 750 | n_decoded =    100, tg =   4.90 t/s, tg_3s =   4.90 t/s
+[2026-08-25 13:32:46][DEBUG] 25.22.588.807 I slot print_timing: id  2 | task 750 | prompt eval time =    6682.24 ms /     4 tokens ( 1670.56 ms per token,     0.60 tokens per second)
+25.22.588.866 I slot print_timing: id  2 | task 750 |        eval time =   21242.67 ms /   108 tokens (  196.69 ms per token,     5.08 tokens per second)
+25.22.588.876 I slot print_timing: id  2 | task 750 |       total time =   27924.91 ms /   112 tokens
+25.22.657.592 I slot print_timing: id  2 | task 750 |    graphs reused =        828
+[2026-08-25 13:32:46][DEBUG] 25.23.098.845 I slot      release: id  2 | task 750 | stop processing: n_tokens = 139, truncated = 0
+[2026-08-25 13:32:46][INFO][nvidia/nemotron-3-nano-4b] Model generated tool calls: []
+[2026-08-25 13:32:46][INFO][nvidia/nemotron-3-nano-4b] Generated prediction: {
+  "id": "chatcmpl-dv5raf54qs6pdoirf76e2",
+  "object": "chat.completion",
+  "created": 1787653929,
+  "model": "nvidia/nemotron-3-nano-4b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Fenerbahçe is generally considered the biggest football team in Turkey by fan numbers and media coverage.",
+        "reasoning_content": "We need to respond only in one sentence, answering: \"What is biggest football team in Turkey?\" Likely referring to club with most fans or historical dominance: Istanbulspor (Istanbul) was historically largest, but currently Fenerbahçe has the largest fan base. The question ambiguous. Provide one sentence answer.\n\nAnswer: \"Fenerbahçe is generally considered the biggest football team in Turkey by fan numbers and media coverage.\" That's a single sentence.\n",
+        "tool_calls": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 32,
+    "completion_tokens": 108,
+    "total_tokens": 140,
+    "completion_tokens_details": {
+      "reasoning_tokens": 87
+    }
+  },
+  "stats": {},
+  "system_fingerprint": "nvidia/nemotron-3-nano-4b"
+}
+[2026-08-25 13:33:48][DEBUG] Received request: POST to /v1/chat/completions with body {
+  "messages": [
+    {
+      "role": "system",
+      "content": "Always answer just in one sentence."
+    },
+    {
+      "role": "user",
+      "content": "What is biggest football team in Turkey?"
+    }
+  ],
+  "model": "local-model",
+  "temperature": 2
+}
+[2026-08-25 13:33:48][INFO][nvidia/nemotron-3-nano-4b] Running chat completion on conversation with 2 messages.
+[2026-08-25 13:33:48][DEBUG] 26.25.210.370 I slot get_availabl: id  2 | task -1 | selected slot by LCP similarity, f_sim_best = 1.000 (> 0.100 thold), f_keep = 0.230
+[2026-08-25 13:33:54][DEBUG] 26.30.949.074
+[2026-08-25 13:33:54][DEBUG] I slot launch_slot_: id  2 | task 859 | processing task, is_child = 0
+[2026-08-25 13:33:55][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 0.0%
+[2026-08-25 13:33:57][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 100.0%
+[2026-08-25 13:34:10][DEBUG] 26.47.359.159
+[2026-08-25 13:34:10][DEBUG] I slot print_timing: id  2 | task 859 | prompt eval time =    2803.35 ms /     4 tokens (  700.84 ms per token,     1.43 tokens per second)
+26.47.359.534 I slot print_timing: id  2 | task 859 |        eval time =   13597.75 ms /    87 tokens (  156.30 ms per token,     6.40 tokens per second)
+26.47.359.952 I slot print_timing: id  2 | task 859 |       total time =   16401.10 ms /    91 tokens
+26.47.360.180 I slot print_timing: id  2 | task 859 |    graphs reused =        913
+[2026-08-25 13:34:10][DEBUG] 26.47.365.710 I slot      release: id  2 | task 859 | stop processing: n_tokens = 118, truncated = 0
+[2026-08-25 13:34:10][INFO][nvidia/nemotron-3-nano-4b] Model generated tool calls: []
+[2026-08-25 13:34:10][INFO][nvidia/nemotron-3-nano-4b] Generated prediction: {
+  "id": "chatcmpl-m6ssxfn6713v74pr64d2h",
+  "object": "chat.completion",
+  "created": 1787654028,
+  "model": "nvidia/nemotron-3-nano-4b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Fenerbahçe, with its massive squad and fanbase, is considered the biggest football team in Turkey.",
+        "reasoning_content": "We need to respond only in one sentence. Answer: The biggest football team in Turkey (by club size?) Likely Fenerbahçe, which has most players, fans. So one sentence: \"Fenerbahçe, with its massive squad and fanbase, is considered the biggest football team in Turkey.\" That's a single sentence.\n",
+        "tool_calls": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 32,
+    "completion_tokens": 87,
+    "total_tokens": 119,
+    "completion_tokens_details": {
+      "reasoning_tokens": 64
+    }
+  },
+  "stats": {},
+  "system_fingerprint": "nvidia/nemotron-3-nano-4b"
+}
+[2026-08-25 13:38:01][DEBUG] Received request: POST to /v1/chat/completions with body {
+  "messages": [
+    {
+      "role": "system",
+      "content": "Always answer just in one sentence."
+    },
+    {
+      "role": "user",
+      "content": "What is biggest football team in Turkey?"
+    }
+  ],
+  "model": "local-model",
+  "temperature": 2
+}
+[2026-08-25 13:38:01][INFO][nvidia/nemotron-3-nano-4b] Running chat completion on conversation with 2 messages.
+[2026-08-25 13:38:01][DEBUG] 30.38.222.664 I slot get_availabl: id  2 | task -1 | selected slot by LCP similarity, f_sim_best = 1.000 (> 0.100 thold), f_keep = 0.271
+[2026-08-25 13:38:07][DEBUG] 30.43.619.559
+[2026-08-25 13:38:07][DEBUG] I slot launch_slot_: id  2 | task 947 | processing task, is_child = 0
+[2026-08-25 13:38:09][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 0.0%
+[2026-08-25 13:38:11][INFO][nvidia/nemotron-3-nano-4b] Prompt processing progress: 100.0%
+[2026-08-25 13:38:36][DEBUG] 31.10.976.236 I slot print_timing: id  2 | task 947 | n_decoded =    100, tg =   4.50 t/s, tg_3s =   4.50 t/s
+[2026-08-25 13:38:37][DEBUG] 31.13.886.325 I slot print_timing: id  2 | task 947 | n_decoded =    121, tg =   4.79 t/s, tg_3s =   6.97 t/s
+[2026-08-25 13:38:39][DEBUG] 31.16.064.254 I slot print_timing: id  2 | task 947 | prompt eval time =    5007.71 ms /     4 tokens ( 1251.93 ms per token,     0.80 tokens per second)
+31.16.064.263 I slot print_timing: id  2 | task 947 |        eval time =   27422.72 ms /   138 tokens (  198.72 ms per token,     5.03 tokens per second)
+31.16.064.264 I slot print_timing: id  2 | task 947 |       total time =   32430.44 ms /   142 tokens
+31.16.064.269 I slot print_timing: id  2 | task 947 |    graphs reused =       1049
+[2026-08-25 13:38:39][DEBUG] 31.16.072.364 I slot      release: id  2 | task 947 | stop processing: n_tokens = 169, truncated = 0
+[2026-08-25 13:38:39][INFO][nvidia/nemotron-3-nano-4b] Model generated tool calls: []
+[2026-08-25 13:38:39][INFO][nvidia/nemotron-3-nano-4b] Generated prediction: {
+  "id": "chatcmpl-zpb928g6j4lhh6xfaux3s",
+  "object": "chat.completion",
+  "created": 1787654281,
+  "model": "nvidia/nemotron-3-nano-4b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Galatasaray F.C. is the biggest football team in Turkey.",
+        "reasoning_content": "We must comply with user instruction: \"Just answer in one sentence.\" We need to provide the correct answer: Biggest football team in Turkey likely based on revenue, not club size. Turkish team with largest financial backing maybe Galatasaray? Or perhaps Fenerbahçe. Actually biggest financially: Istanbul-based clubs. According to FIFA or Forbes, Galatasaray and Fenerbahçe have top revenues; Galaxy had highest 2022 revenue. But \"biggest\" could be most popular? Could refer to club name popularity? Probably Galatasaray.\n\nProvide one sentence: The biggest football team in Turkey is Galatasaray F.C., based in Istanbul.\n",
+        "tool_calls": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 32,
+    "completion_tokens": 138,
+    "total_tokens": 170,
+    "completion_tokens_details": {
+      "reasoning_tokens": 121
+    }
+  },
+  "stats": {},
+  "system_fingerprint": "nvidia/nemotron-3-nano-4b"
+}
